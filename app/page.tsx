@@ -1,9 +1,13 @@
 import Approch from "@/components/Approch";
 import Footer from "@/components/Footer";
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Image from "next/image";
+import Clients from "../components/Clients";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -11,7 +15,11 @@ export default function Home() {
     <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems}/>
       <Hero/>
-      {/* <Approch/> */}
+      <Grid/>
+      <RecentProjects/>
+      <Clients/>
+      <Experience/>
+      <Approch/>
       <Footer/>
     </div>
    </main>
